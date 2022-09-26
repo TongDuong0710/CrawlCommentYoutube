@@ -73,11 +73,11 @@ while (1) {
       let kt = false;
       for (x of word[emo]) {
         if (text.includes(x)) {
-          if (emo == 0) tag = "buon";
-          else if (emo == 1) tag = "hoiBuon";
-          else if (emo == 2) tag = "bth";
-          else if (emo == 3) tag = "hoiVui";
-          else if (emo == 4) tag = "Vui";
+          if (emo == 0) tag = "buon - " + x;
+          else if (emo == 1) tag = "hoiBuon - " + x;
+          else if (emo == 2) tag = "bth - " + x;
+          else if (emo == 3) tag = "hoiVui - " + x;
+          else if (emo == 4) tag = "Vui - " + x;
           result.push([text, tag]);
           kt = true;
           break;
